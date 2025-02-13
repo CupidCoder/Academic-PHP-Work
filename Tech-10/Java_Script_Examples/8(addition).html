@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>JS</title>
+<script language="Javascript" type="text/JavaScript">
+function fn(){
+var n1=frm.nm1.value;
+var n2=frm.nm2.value;
+if(n1==""){
+alert("first insert a input");
+frm.n1.focus();
+}
+else if(n2==""){
+alert("first insert a input");
+frm.n2.focus();
+}
+else{
+var v1=parseInt(n1);
+var v2=parseInt(n1);
+alert(v1+v2);
+}
+}
+</script>
+</head>
+<body>
+<form name="frm" action="" method="post">
+Number 1: <input type="text" name="nm1">
+Number 2: <input type="text" name="nm2">
+<input type="button" value="add" onclick="fn();">
+</form>
+</body>
+</html>

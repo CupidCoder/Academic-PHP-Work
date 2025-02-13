@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>JS</title>
+<script language="Javascript" type="text/JavaScript">
+function fn(){
+var n1=frm.nm1.value;
+var n2=frm.nm2.value;
+var num1=parseInt(n1);
+var num2=parseInt(n2);
+var op=frm.p.value;
+if(op=="add"){
+alert(num1+num2);
+}
+else if(op=="sub"){
+alert(num1-num2);
+}
+else if(op=="mul"){
+alert(num1*num2);
+}
+else if(op=="div"){
+alert(num1/num2);
+}
+}
+</script>
+</head>
+<body>
+<form name="frm" action="" method="post">
+N1:<input type="text" name="nm1">
+N2:<input type="text" name="nm2"><br>
+Select Operators:<select name="p" onchange="fn();">
+<option></option>
+<option value="add">Addition</option>
+<option value="sub">Subtraction</option>
+<option value="mul">Multiplications</option>
+<option value="div">Divison</option>
+</select>
+</form>
+</body>
+</html>

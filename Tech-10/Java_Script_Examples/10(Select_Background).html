@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>JS</title>
+<script language="Javascript" type="text/JavaScript">
+function fn(){
+var m=frm.p.value;
+frm.action=m;
+frm.submit();
+}
+</script>
+</head>
+<body>
+<form name="frm" action="" method="post">
+<select name="p" onchange="fn();">
+<option></option>
+<option value="red.html">RED</option>
+<option value="green.html">GREEN</option>
+<option value="yellow.html">YELLOW</option>
+<option value="blue.html">BLUE</option>
+</select>
+</form>
+</body>
+</html>

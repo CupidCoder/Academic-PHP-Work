@@ -1,0 +1,29 @@
+<?php
+session_start();
+if ($_SESSION["usr"] == "") {
+    header("Location:Index.php");
+}
+$usr = $_SESSION["usr"];
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT</title>
+</head>
+
+<body>
+    <H1 align="center">Assignment(<?php echo $usr; ?>)</h1>
+    <p align="center">
+        <a href="InsRec.php" target="fr1">ADD RECORD</a> |
+        <a href="Records.php" target="fr1">Show all Records</a>
+        <a href="CodeLogics.php?cs=5">LOGOUT</a>
+    </p>
+    <p align="center">
+        <iframe name="fr1" src="welcome.php" width="800" height="500" frameborder="0"></iframe>
+    </P>
+</body>
+
+</html>
