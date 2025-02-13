@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>HELLO MCA-3rd</title>
+<script langauge="JavaScipt">
+function chkNum(num){
+for(var i=0;i<num.length;i++){
+switch(num.charAt(i)){
+case '0':case '1':case '2':case '3':case '4':case '5':case '6':
+case '7':case '8':case '9':break;
+default: return false;
+}
+}
+return true;
+}
+function f1(){
+var v1=frm1.t1.value;
+var v2=frm1.t2.value;
+if(v1==""){
+alert("Enter a number in N1");
+frm1.t1.focus();
+}else if(!chkNum(v1)){
+alert("Enter number only for N1");
+frm1.t1.focus();
+}else if(v2==""){
+alert("Enter a number in N2");
+frm1.t2.focus();
+}else if(!chkNum(v2)){
+alert("Enter number only for N2");
+frm1.t2.focus();
+}else{
+var n1=parseInt(v1);
+var n2=parseInt(v2);
+alert(n1+n2);
+}
+}
+</script>
+</head>
+<body>
+<form name="frm1" action="" method="post">
+N1:<input type="text" name="t1"><br>
+N2:<input type="text" name="t2"><br>
+<input type="Button" value="ADD" onclick="f1();">
+</form>
+</body>
+</html>

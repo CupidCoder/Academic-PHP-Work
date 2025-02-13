@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>HELLO MCA-3rd</title>
+<script langauge="JavaScipt">
+function f1(){
+frm1.action="r.htm";
+frm1.target="_blank";
+frm1.submit();
+}
+function f2(){
+frm1.action="g.htm";
+frm1.target="_self";
+frm1.submit();
+}
+function f3(){
+frm1.action="y.htm";
+frm1.target="_blank";
+frm1.submit();
+}
+</script>
+</head>
+<body>
+<form name="frm1" action="" method="post">
+<input type="button" value="RED" onclick="f1();">
+<input type="button" value="GREEN" onclick="f2();">
+<input type="button" value="YELLOW" onclick="f3();">
+</form>
+</body>
+</html>

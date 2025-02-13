@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>HELLO MCA-3rd</title>
+<script langauge="JavaScipt">
+function f1(){
+var c=frm1.colours.value;
+//alert(c);
+if(c=="RED"){
+frm1.action="r.htm";
+frm1.submit();
+}else if(c=="GREEN"){
+frm1.action="g.htm";
+frm1.submit();
+}else{
+frm1.action="y.htm";
+frm1.submit();
+}
+}
+
+</script>
+</head>
+<body>
+<form name="frm1" action="" method="post">
+<select name="colours" onchange="f1();">
+<option>Select Color Page</option>
+<option>RED</option>
+<option>GREEN</option>
+<option>YELLOW</option>
+</select>
+</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>HELLO MCA-3rd</title>
+<script langauge="JavaScipt">
+function f1(){
+var n1=frm1.n1.value;
+var n2=frm1.n2.value;
+var op=frm1.op.value;
+if(n1==""){
+alert("Enter N1: ");
+frm1.n1.focus();
+}else if(n2==""){
+alert("Enter N2: ");
+frm1.n2.focus();
+}else if(op==""){
+alert("Select Operation ");
+frm1.op.focus();
+}else{
+var v1=parseInt(n1);
+var v2=parseInt(n2);
+if(op=="+"){
+alert(v1+v2);
+}else if(op=="-"){
+alert(v1-v2);
+}else if(op=="*"){
+alert(v1*v2);
+}
+}
+}
+</script>
+</head>
+<body>
+<form name="frm1" action="" method="post">
+N1:<input type="text" name="n1"><br>
+N2:<input type="text" name="n2"><br>
+Select Operation: <select name="op">
+<option value=""></option>
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+</select><br>
+<input type="button" name="nm" value="Show Result" onclick="f1();">
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>HELLO MCA-3rd</title>
+<script langauge="JavaScipt">
+function doReverse(st){
+var rev="";
+for(i=st.length-1;i>=0;i--){
+rev=rev+st.charAt(i);
+}
+return rev;
+}
+function f1(){
+var v1=frm1.t1.value;
+frm1.t2.value=doReverse(v1);
+}
+</script>
+</head>
+<body>
+<form name="frm1" action="" method="post">
+Enter String:<input type="text" name="t1"><br>
+Reverse String:<input type="text" name="t2"><br>
+<input type="Button" value="Do Reverse" onclick="f1();">
+</form>
+</body>
+</html>

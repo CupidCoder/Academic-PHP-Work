@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>HELLO MCA-3rd</title>
+<script langauge="JavaScipt">
+function f1(){
+var v1=frm1.t1.value;
+var v2=frm1.t2.value;
+if(v1==""){
+alert("Enter a number in N1");
+frm1.t1.focus();
+}else if(v2==""){
+alert("Enter a number in N2");
+frm1.t2.focus();
+}else{
+//alert(v1.length);
+//alert(v1.charAt(2));
+/*var n1=parseInt(v1);
+var n2=parseInt(v2);
+alert(n1+n2);*/
+}
+}
+</script>
+</head>
+<body>
+<form name="frm1" action="" method="post">
+N1:<input type="text" name="t1"><br>
+N2:<input type="text" name="t2"><br>
+<input type="Button" value="ADD" onclick="f1();">
+</form>
+</body>
+</html>
